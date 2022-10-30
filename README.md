@@ -23,7 +23,6 @@ I used Django version 4.1.2 and Python 3.10.7 to develop the software.
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
 * I would like to improve the design of the wev app.
 * I would like to created a web app that can upload, upload, delete and update pdf files. With this I will be able to store important information of Helipads features for Helicopter pilots in United Nations mission in Africa.
 * I would like to improve my understanding of the differents tags we can use on Django.
