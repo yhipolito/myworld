@@ -10,25 +10,22 @@ The purpose of writing this software is to keep a basic track of my family membe
 
 # Web Pages
 
-{Describe each of the web pages you created and how the web app transitions between each of them.  Also describe what is dynamically created on each page.}
-
-
+I have created the add.html page which allows us to create a new record for our database members. Another page I have created besides index.html is update.html which allows to change some of the previous created records. We transition between pages thanks to members.urls.py which has a urlsPatterns list, One of those is "path('update/<int:id>', views.update, name='update')," This path call views.update function and pass the parameter of id which an integer. On views we can find python functions that call templates. In update funtion we pass an argument ({{ x.id }}), Then we call the record related to that id to send a HttpResponse which will render update.html template with the respective context.
 
 # Development Environment
 
 {Describe the tools that you used to develop the software}
 
-{Describe the programming language that you used and any libraries.}
+I used Django version 4.1.2 and Python 3.10.7 to develop the software.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+* [W3schools](https://www.w3schools.com/django/index.php)
+* [Django](https://www.djangoproject.com)
 
 # Future Work
 
 {Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+* I would like to improve the design of the wev app.
+* I would like to created a web app that can upload, upload, delete and update pdf files. With this I will be able to store important information of Helipads features for Helicopter pilots in United Nations mission in Africa.
+* I would like to improve my understanding of the differents tags we can use on Django.
