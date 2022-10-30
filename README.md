@@ -14,8 +14,6 @@ I have created the add.html page which allows us to create a new record for our 
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
-
 I used Django version 4.1.2 and Python 3.10.7 to develop the software.
 
 # Useful Websites
