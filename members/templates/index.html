@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family</title>
+    <link rel="stylesheet" href="{% static 'myfirst.css' %}">
+</head>
+
+<body>
+
+    <h1>Familia Hipolito Corzo</h1>
+
+    <table border="3">
+        {% for x in mymembers %}
+        <!--this was a test of forloop.first 
+            <tr {% if forloop.first %}
+        style='background-color:lightblue;'
+        {% endif %}> -->
+        <tr>
+            <td> <a href="update/{{ x.id }}">{{ x.id }}</a></td>
+            <td>{{ x.firstname }}</td>
+            <td>{{ x.lastname }}</td>
+            <td><a href="delete/{{ x.id }}">delete</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <p>
+        <a href="add">Add member</a>
+    </p>
+
+</body>
+
+</html>
